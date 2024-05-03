@@ -1,0 +1,122 @@
+@import url(reset.css);
+@import url(//fonts.googleapis.com/css?family=Poppins);
+
+:root {
+  --possum:#F0E7D8;
+  --gunmetal:#293132;
+  --possumbrown:#99582A;
+  
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background: var(--possum);
+  color: var(--gunmetal);
+}
+
+.header {
+  display: flex;
+  background: var(--possumbrown);
+  color: var(--possum);
+  font-size: 1em;
+  padding: 1.5em;
+}
+.header h1 {
+  font-size: 2em;
+  flex: 1 0 10em;
+  width: 200px;
+}
+
+.header nav {
+  flex: 2;
+  padding-top: 5px;
+  align-items: flex-end;
+}
+nav a {
+  color: var(--possum);
+}
+nav li {
+  text-align: center;
+}
+nav a:visited {
+  color: var(--gunmetal);
+}
+
+main {
+  margin: 1em;
+}
+
+h1 {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.information {
+    font-size:  1.2em;
+    padding: 1em 0;
+}
+.information p {
+    padding: 0.2em 0;
+}
+
+form>div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    column-count: 2;
+    
+}
+#show_password {
+  flex: 0 4;
+  padding: 0.5em;
+  border: 0.2em solid var(--gunmetal);
+  border-radius: 0.2em;
+  align-self: flex-start;
+}
+
+form input {
+    flex: 0 4;
+    padding: 0.5em;
+    border: 0.2em solid var(--gunmetal);
+    border-radius: 0.2em;
+    align-items: center;
+    
+}
+
+form label, .remember_me {
+    align-items:flex-start;
+}
+fieldset div {
+    padding: 0.5em;
+}
+button, .account_links a{
+    border-radius: 0.2em;
+    border: 0.2em solid var(--gunmetal);
+    padding: 0.5em 0.4em;
+    font-family: "Poppins", sans-serif;
+    background-color: var(--gunmetal);
+    color: var(--possum);
+    margin: 2em 0.1em;
+}
+
+.account_links a:visited {
+  color: var(--possum);
+}
+
+ul {
+    list-style: circle;
+    padding-left: 1em;
+}
+
+form span {
+  display: block;
+  color: green;
+}
+.hidden {
+  display: none;
+}
+
+
